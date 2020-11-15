@@ -7,6 +7,8 @@
 
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "ViewControllerForTableVC.h"
+#import "TableViewController.h"
 
 @interface FirstViewController ()
 
@@ -34,6 +36,18 @@
     //[self.navigationController pushViewController:vc animated:YES]; // push
     //[self presentViewController:vc animated:YES completion:nil]; // modal
 }
+
+
+- (void)openViewControllerForTableVC {
+    ViewControllerForTableVC *vcTable = [ViewControllerForTableVC new];
+    [self.navigationController showViewController:vcTable sender:self];
+}
+
+- (void)openTableViewController {
+    TableViewController *tableViewController = [TableViewController new];
+    [self.navigationController showViewController:tableViewController sender:self];
+}
+
 
 - (void)configureControls {
     
@@ -86,6 +100,32 @@
     textField.keyboardType = UIKeyboardTypeNumberPad;
     textField.keyboardAppearance = UIKeyboardAppearanceDark;
     [self.view addSubview:textField];
+    
+    
+    // add UIButton for TableVC
+    UIButton *buttonVCTable = [UIButton buttonWithType:UIButtonTypeCustom];
+    buttonVCTable.frame = CGRectMake(0.0, 0.0, 100.0, 32.0);
+    buttonVCTable.center = CGPointMake(viewX, viewY + 100.0);
+    [buttonVCTable setBackgroundColor:[UIColor systemOrangeColor]];
+    [buttonVCTable setTitleColor:[UIColor systemBlueColor] forState:(UIControlStateNormal)];
+    [buttonVCTable setTitle:@"VC+Table" forState:UIControlStateNormal];
+    [self.view addSubview:buttonVCTable];
+    
+    [buttonVCTable addTarget:self action:@selector(openViewControllerForTableVC) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:buttonVCTable];
+    
+    
+    // add UIButton for TableVC
+    UIButton *buttonTableVC = [UIButton buttonWithType:UIButtonTypeCustom];
+    buttonTableVC.frame = CGRectMake(0.0, 0.0, 100.0, 32.0);
+    buttonTableVC.center = CGPointMake(viewX, viewY + 150.0);
+    [buttonTableVC setBackgroundColor:[UIColor systemOrangeColor]];
+    [buttonTableVC setTitleColor:[UIColor systemBlueColor] forState:(UIControlStateNormal)];
+    [buttonTableVC setTitle:@"TableVC" forState:UIControlStateNormal];
+    [self.view addSubview:buttonTableVC];
+    
+    [buttonTableVC addTarget:self action:@selector(openTableViewController) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:buttonTableVC];
     
     
     // add Image View

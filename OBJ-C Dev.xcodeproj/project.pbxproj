@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1B681C025619C8A00DA9664 /* ViewControllerForTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B681BF25619C8A00DA9664 /* ViewControllerForTableVC.m */; };
+		B1B681C425619C9700DA9664 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B681C325619C9700DA9664 /* TableViewController.m */; };
+		B1B681C92561BF5400DA9664 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B681C82561BF5400DA9664 /* CustomTableViewCell.m */; };
 		B1F510CB255B4425009A91B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F510CA255B4425009A91B0 /* AppDelegate.m */; };
 		B1F510CE255B4425009A91B0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F510CD255B4425009A91B0 /* SceneDelegate.m */; };
 		B1F510D1255B4425009A91B0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F510D0255B4425009A91B0 /* FirstViewController.m */; };
@@ -17,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1B681BE25619C8A00DA9664 /* ViewControllerForTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerForTableVC.h; sourceTree = "<group>"; };
+		B1B681BF25619C8A00DA9664 /* ViewControllerForTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerForTableVC.m; sourceTree = "<group>"; };
+		B1B681C225619C9700DA9664 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B1B681C325619C9700DA9664 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B1B681C72561BF5400DA9664 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		B1B681C82561BF5400DA9664 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		B1D877F7255D45E4004143C6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B1D877F9255D463F004143C6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B1F510C6255B4425009A91B0 /* OBJ-C Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OBJ-C Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +79,12 @@
 				B1F510D0255B4425009A91B0 /* FirstViewController.m */,
 				B1D877F9255D463F004143C6 /* SecondViewController.h */,
 				B1F51112255D4316009A91B0 /* SecondViewController.m */,
+				B1B681BE25619C8A00DA9664 /* ViewControllerForTableVC.h */,
+				B1B681BF25619C8A00DA9664 /* ViewControllerForTableVC.m */,
+				B1B681C225619C9700DA9664 /* TableViewController.h */,
+				B1B681C325619C9700DA9664 /* TableViewController.m */,
+				B1B681C72561BF5400DA9664 /* CustomTableViewCell.h */,
+				B1B681C82561BF5400DA9664 /* CustomTableViewCell.m */,
 				B1F510D5255B442B009A91B0 /* Assets.xcassets */,
 				B1F510D7255B442B009A91B0 /* LaunchScreen.storyboard */,
 				B1F510DA255B442B009A91B0 /* Info.plist */,
@@ -146,10 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B681C025619C8A00DA9664 /* ViewControllerForTableVC.m in Sources */,
 				B1F510D1255B4425009A91B0 /* FirstViewController.m in Sources */,
 				B1F51113255D4316009A91B0 /* SecondViewController.m in Sources */,
 				B1F510CB255B4425009A91B0 /* AppDelegate.m in Sources */,
 				B1F510DC255B442B009A91B0 /* main.m in Sources */,
+				B1B681C425619C9700DA9664 /* TableViewController.m in Sources */,
+				B1B681C92561BF5400DA9664 /* CustomTableViewCell.m in Sources */,
 				B1F510CE255B4425009A91B0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
